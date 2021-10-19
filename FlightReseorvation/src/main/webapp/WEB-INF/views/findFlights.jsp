@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<%@include file="./base2.jsp" %>
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+</head>
+<body style="background: #e2e2e2e2">
+   
+   <div class="row">
+   <div class="col-4 offset-4">
+   <div class="card mt-5">
+   <div class="card-body"> 
+   <div class="container text-center">
+   <h1>Find Flights</h1>
+   </div>
+   
+    <form action="findFlight" method="post">
+  <div class="form-group">
+    <label for="name">From</label>
+    <input type="text" class="form-control" id="" name="from" >
+    </div>
+    
+    <div class="form-group">
+    <label for="name">To</label>
+    <input type="text" class="form-control" id="" name="to" >
+    </div>
+    
+    <div class="form-group">
+    <label for="name">Departure Date</label>
+    <input type="date" class="form-control" id="" name="departureDate" >
+    </div>
+  
+  <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
+</form>
+   </div>
+   
+   </div>
+   </div>
+   </div>
+   </div>
+</body>
+</html>
